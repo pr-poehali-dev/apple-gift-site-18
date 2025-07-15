@@ -32,7 +32,14 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#007AFF] to-[#5856D6] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div className="absolute inset-0 opacity-20">
+          <img 
+            src="/img/8f014739-4176-48b1-adbf-36fe11cc199a.jpg" 
+            alt="Apple Gift Cards"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
           <div className="text-center">
             <h2 className="text-6xl font-light mb-6 tracking-tight">Apple Gift Cards</h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
