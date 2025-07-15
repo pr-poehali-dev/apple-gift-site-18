@@ -45,7 +45,11 @@ const Index = () => {
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
               Дарите возможности. Получайте любимые приложения, игры, музыку и многое другое.
             </p>
-            <Button size="lg" className="bg-white text-[#007AFF] hover:bg-gray-100 px-8 py-3 text-lg font-medium">
+            <Button 
+              size="lg" 
+              className="bg-white text-[#007AFF] hover:bg-gray-100 px-8 py-3 text-lg font-medium"
+              onClick={() => document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Выбрать карту
             </Button>
           </div>
