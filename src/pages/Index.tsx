@@ -65,7 +65,6 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="pt-0">
                   <div className="text-center mb-6">
-                    <p className="text-3xl font-light text-gray-900 mb-2">{card.price} ₽</p>
                     <p className="text-sm text-gray-500">Мгновенная доставка</p>
                   </div>
                   <Button className="w-full bg-[#007AFF] hover:bg-[#0056CC] text-white py-3">
