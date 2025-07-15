@@ -6,9 +6,9 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   const giftCards = [
-    { id: 1, amount: 1000, price: 1000, image: '/img/b668cd3d-1c2e-4784-a76c-f565cbff83d4.jpg' },
-    { id: 2, amount: 2000, price: 2000, image: '/img/b668cd3d-1c2e-4784-a76c-f565cbff83d4.jpg' },
-    { id: 3, amount: 5000, price: 5000, image: '/img/b668cd3d-1c2e-4784-a76c-f565cbff83d4.jpg' },
+    { id: 1, amount: 1000, price: 1000, image: '/img/40712cf6-4097-47cb-8e08-f38dbdb20671.jpg' },
+    { id: 2, amount: 2000, price: 2000, image: '/img/19b7342f-2574-4143-af25-de4e2f3ea5f4.jpg' },
+    { id: 3, amount: 5000, price: 5000, image: '/img/d45c58ab-580a-4399-9e53-60d3fdfd36a9.jpg' },
   ];
 
   return (
@@ -58,8 +58,12 @@ const Index = () => {
             {giftCards.map((card) => (
               <Card key={card.id} className="relative overflow-hidden bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <CardHeader className="pb-4">
-                  <div className="w-full h-48 bg-gradient-to-br from-[#007AFF] to-[#5856D6] rounded-lg flex items-center justify-center mb-4">
-                    <Icon name="Gift" size={48} className="text-white" />
+                  <div className="w-full h-48 rounded-lg overflow-hidden mb-4">
+                    <img 
+                      src={card.image} 
+                      alt={`Apple Gift Card ${card.amount} ₽`}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <CardTitle className="text-2xl font-light text-center">{card.amount} ₽</CardTitle>
                 </CardHeader>
